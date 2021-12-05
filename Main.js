@@ -1,3 +1,5 @@
+
+//--------------------------------------------------------
 const showMenu = (nav_toogle, nav_menu) =>{
     const toggle = document.getElementById(nav_toogle)
     const nav = document.getElementById(nav_menu)
@@ -11,7 +13,7 @@ const showMenu = (nav_toogle, nav_menu) =>{
 showMenu('nav_toggle','nav_menu')
 
 //------------------------------------------------------------
-const navLink = document.querySelectorAll('nav__link')
+const navLink = document.querySelectorAll('nav_link')
 
 function linkAction(){
     const nav_menu = document.getElementById('nav_menu')
@@ -31,10 +33,11 @@ function scrollActive(){
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('nav__menu a[href*=' + Home + ']').classList.add('active_link')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            document.querySelector('nav__menu a[href*=' + Home + ']').classList.remove('active_link')
         }
     })
 }
 window.addEventListener('scroll', scrollActive)
+//-----------------------------------------------------------------

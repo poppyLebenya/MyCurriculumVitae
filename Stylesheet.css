@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 :root{
-    --header-height:4rem ;
-    
+    --header-height:5rem ;
+
     --title-color: #0B0A0A;
     --text-color: #403A3A;
     --text-color-light: #707070;
@@ -33,8 +33,8 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body{
@@ -61,6 +61,7 @@ ul{
 a{
     text-decoration: none;
 }
+
 img{
     max-width: 100%;
     height: auto;
@@ -101,6 +102,7 @@ img{
     box-shadow: 0 -1px 4px rgba(0,0,0,.1);
     transition: .3s;
 }
+
 
 .nav{
     height: var(--header-height);
@@ -163,4 +165,42 @@ img{
 
 .show_menu{
     bottom: var(--header-height);
+}
+.active_link{
+    color: var(--title-color);
+}
+
+
+.home{
+    position: relative;
+}
+.home_cont{
+    gap: 3rem;
+}
+
+.home_img{
+  width: 120px;
+  height: 120px;
+  border-radius: 80%;
+  justify-self: center;
+  margin-bottom: var(--mb-1);
+}
+
+.Title{
+    font-size: var(--h1-font-size);
+}
+
+.home_address{
+    gap: 1rem;
+}
+
+home_info{
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+}
+
+.home_icon{
+    font-size: 1.2rem;
+    margin-right:.25rem;
 }
