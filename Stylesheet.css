@@ -1,29 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 :root{
     --header-height:4rem ;
-
-    --title-color:#0B0A0A;
-    --text-color:#403A3A;
-    --text-color-light:#707070;
-    --container-color:#FAFAFA ;
-    --container-color-alt:#F0EFEF ;
+    
+    --title-color: #0B0A0A;
+    --text-color: #403A3A;
+    --text-color-light: #707070;
+    --container-color: #FAFAFA;
+    --container-color-alt: #F0EFEF;
     --body-color: #FCFCFC;
 
-    --body-font:'Poppins', sans-serif; ;
-    --h1-font-size:2rem ;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --big-font-size:.985rem ;
-    --normal-font-size: .938rem;
-    --small-font-size: .835rem ;
-    --smaller-font-size:813rem;
+    --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .875rem;
+  --smaller-font-size: .813rem;
 
     --font-medium: 500;
     --font-semi-bold:600;
 
-    --mb-1:5rem;
-    --mb-2:2rem;
-    --mb-3:1rem;
+    --mb-1:.5rem;
+    --mb-2: 1.5rem;
+    --mb-3: 1rem;
 
     --z-tooltip:10;
     --z-fixed:100;
@@ -113,7 +112,7 @@ img{
 @media screen and (max-width:968px) {
     .nav_menu{
         position: fixed;
-        bottom: var(--header-height);
+        bottom: -100%;
         left: 0;
         width: 100%;
         padding: 2rem 1.5rem;
@@ -130,26 +129,38 @@ img{
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
+
 .nav_toogle{
     font-size: 1.2rem;
     cursor: pointer;
 }
+
 .nav_item{
     text-align: center;
 }
+
 .nav_list{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr) ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
 }
+
 .nav_link{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     font-size:var(--smaller-font-size) ;
     color:var(--text-color-light) ;
     font-weight:var(--font-medium) ;
-
 }
+
 .nav_link:hover{
-    color: var(--title-color);
+    color:var(--text-color) ;
+}
+.nav_icon{
+    font-size: 1.2rem;
+    margin-bottom: var(--mb-1);
+}
+
+.show_menu{
+    bottom: var(--header-height);
 }
