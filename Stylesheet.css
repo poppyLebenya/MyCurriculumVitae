@@ -179,8 +179,8 @@ img{
 }
 
 .home_img{
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 80%;
   justify-self: center;
   margin-bottom: var(--mb-1);
@@ -188,13 +188,14 @@ img{
 
 .Title{
     font-size: var(--h1-font-size);
+    text-align: center;
 }
 
 .home_address{
     gap: 1rem;
 }
 
-home_info{
+.home_info{
     display: flex;
     align-items: center;
     font-size: var(--small-font-size);
@@ -203,4 +204,94 @@ home_info{
 .home_icon{
     font-size: 1.2rem;
     margin-right:.25rem;
+}
+
+.section_title{
+    text-align: center;
+    font-size: var(--h2-font-size);
+    gap: 1rem;
+}
+.social_cont{
+    grid-template-columns: max-content;
+    gap: 1rem;
+}
+
+.social_link{
+display: inline-flex;
+align-items: center;
+font-size: var(--small-font-size);
+color: var(--text-color);
+}
+
+.social_link:hover{
+color: var(--title-color);
+}
+
+.social_icon{
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+
+.profile_description{
+    text-align: center;
+}
+
+.education_content{
+    display: flex;
+}
+.education-time{
+    padding-right: 1rem;
+}
+.education_rounder{
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--text-color-light);
+    border-radius: 50%;
+    margin-top: .25rem;
+}
+.education_line{
+    display: block;
+    width: 2px;
+    height: 110%;
+    background-color: var(--text-color-light);
+    transform: translate(7px,0);
+}
+.education_data{
+    gap: .5rem;
+}
+.education_type{
+    font-size: var(--h3-font-size);
+}
+.education_institue{
+    font-size: var(--small-font-size);
+    color:var(--title-color);
+}
+.education_year{
+    font-size: var(--smaller-font-size);
+}
+.skills_cont{
+    grid-template-columns: repeat(2,1fr);
+    gap: 0;
+
+}
+.skills_data{
+    gap: .5rem;
+}
+.skills_name{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-3);
+}
+.skills_icon{
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+.skills_list{
+    display: inline-block;
+    width: 5px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    margin-right: .75rem;
 }
