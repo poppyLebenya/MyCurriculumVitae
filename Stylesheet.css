@@ -232,17 +232,22 @@ color: var(--title-color);
     margin-right: .25rem;
 }
 
-.profile_description{
+.profile_description,
+.experience_description,
+.certificate_description{
     text-align: center;
 }
 
-.education_content{
+.education_content,
+.experience_content{
     display: flex;
 }
-.education-time{
+.education_time,
+.experience_time{
     padding-right: 1rem;
 }
-.education_rounder{
+.education_rounder,
+.experience_rounder{
     position: relative;
     display: block;
     width: 16px;
@@ -258,17 +263,21 @@ color: var(--title-color);
     background-color: var(--text-color-light);
     transform: translate(7px,0);
 }
-.education_data{
+.education_data,
+.experience_data{
     gap: .5rem;
 }
-.education_type{
+.education_type,
+.experience_title{
     font-size: var(--h3-font-size);
 }
-.education_institue{
+.education_institue,
+.experience_company{
     font-size: var(--small-font-size);
     color:var(--title-color);
 }
-.education_year{
+.education_year,
+.experience_year{
     font-size: var(--smaller-font-size);
 }
 .skills_cont{
@@ -294,4 +303,21 @@ color: var(--title-color);
     background-color: var(--text-color);
     border-radius: 50%;
     margin-right: .75rem;
+}
+.certificate_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+}
+.references_title{
+  font-size: var(--h3-font-size);  
+}
+.references_content{
+    gap: .25rem;
+}
+.references_subtitle{
+    color: var(--text-color-light);
+}
+.references_subtitle,
+.references_content{
+    font-size: var(--smaller-font-size);
 }
